@@ -7,7 +7,7 @@ export default function Menu() {
     }
   return (
     <div className="bg-black">
-      <div className="nav flex justify-between p-8">
+      <div className="nav flex justify-between p-8 items-center">
       <div className="navbar-icon" onClick={handleClick}>
             <span>
               <i className="fas fa-bars"></i>
@@ -17,7 +17,7 @@ export default function Menu() {
           <div className="logo-container">
             <Link to={"/"}>
               <img
-                src="../img/Capture d'écran 2024-10-03 131525.png"
+                src="../img/logo2.png"
                 alt="logo"
                 className="logo"
               />
