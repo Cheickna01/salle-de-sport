@@ -4,7 +4,6 @@ export default function Slider() {
     const [currentSlide, setCurrentSlide] = useState(0)
     const images = ["../../img/image1.jpg","../../img/image2.webp","../../img/image4.webp"]
     const [path, setPath] = useState(images[currentSlide])
-    console.log(currentSlide)
     useEffect(()=>{
         const id = setInterval(() => {
             if(currentSlide !== images.length-1){

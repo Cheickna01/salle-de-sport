@@ -1,5 +1,6 @@
 import { Form, FormGroup, Label, Col, Input, Button } from "reactstrap";
 import { useState } from "react";
+import emailjs from "emailjs-com";
 export default function ContactComponent({ Datas, setDatas }) {
   const {
     prenom,
@@ -27,6 +28,23 @@ export default function ContactComponent({ Datas, setDatas }) {
     setIsSubmit(true);
 
     if (validationCheck()) {
+
+
+
+        emailjs
+      .send(
+        "service_0j3qqpf", // Service ID
+        "template_g4stjz1", // Template ID
+        Datas,
+        "dnLQqGoN97blOEA94"  // Public Key
+      )
+      .then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+        },
+        (err) => {
+          console.log("FAILED...", err);
+        })
       
       console.log("envoi");
       setDatas({

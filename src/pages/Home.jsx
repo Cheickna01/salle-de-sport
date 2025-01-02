@@ -12,7 +12,7 @@ export default function Home() {
             là où performance et bien-être se rencontrent.
           </p>
           <button className="bg-red-600 text-slate-100 p-3 rounded hover:bg-red-700 mr-2 mt-5">
-            Réjoignez nous
+            <a href="#contact">Réjoignez nous</a>
           </button>
           <button className="bg-black text-slate-100 p-3 rounded hover:bg-red-700">
             Essaie gratuit
@@ -32,7 +32,7 @@ export default function Home() {
             </p>
 
             <button className="bg-black px-4 py-2 rounded mt-12 text-slate-100">
-              <Link to={"/contact"}>Réserver ma place</Link>
+              <a href="#contact">Réserver ma place</a>
             </button>
           </div>
           <div className="col-md-6 im1">
@@ -55,13 +55,13 @@ export default function Home() {
             </p>
 
             <button className="bg-black px-4 py-2 rounded mt-12 text-slate-100">
-              <Link to={"/contact"}>Réserver ma place</Link>
+            <a href="#contact">Réserver ma place</a>
             </button>
           </div>
         </div>
       </div>
 
-      <div className=" container second-section">
+      <div className=" container second-section" id="about">
         <h3>Notre mission</h3>
         <p>
           Découvrez B5, la nouvelle salle de sport dédiée à un entraînement
@@ -88,7 +88,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="fourth-container mt-[250px] md:mt-[200px] container">
+      <div className="fourth-container mt-[250px] md:mt-[200px] container" id="services">
         <h3 className="ser">Nos Services</h3>
         <p>Salle de musculation</p>
         <p>
@@ -172,12 +172,12 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="temoignages text-center w-[450px] container mt-8">
+      <div className="temoignages text-center w-[450px] container mt-8" >
         <h3 className="text-center">Témoignages</h3>
         <Testimonial/>
       </div>
 
-      <div className="contact mt-8">
+      <div className="contact mt-8" id="contact">
         <h3 className="text-center">Contactez-nous</h3>
         <ContactUs/>
       </div>

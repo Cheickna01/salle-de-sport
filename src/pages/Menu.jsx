@@ -29,13 +29,13 @@ export default function Menu() {
             <Link to={"/"}>Home</Link>
           </li>
           <li className="nav-item text-white rounded hover:bg-red-500 ">
-            <Link to={"/about"}>About</Link>
+            <a href={"#about"}>About</a>
           </li>
           <li className="nav-item text-white rounded hover:bg-red-500 ">
-            <Link to={"/services"}>Services</Link>
+            <a href={"#services"}>Services</a>
           </li>
           <li className="nav-item text-white rounded hover:bg-red-500 ">
-            <Link to={"/contact"}>Contact</Link>
+          <a href={"#contact"}>Contact</a>
           </li>
         </ul>
       </div>
