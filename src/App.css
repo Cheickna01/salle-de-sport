@@ -1,0 +1,207 @@
+*{
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.first-section{
+  background-image: url("/img/image1.jpg");
+  position: relative;
+  background-size: cover;
+  min-height: 500px;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+.first-section::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+
+}
+.title-content{
+  position: absolute;
+  top: 200px;
+  left: 8%;
+}
+.title{
+  font-size: 100px;
+  color: #fff;
+}
+.subtitle{
+  font-size: 55px;
+  color: #fff;
+}
+.navbar-icon span{
+  color: #fff;
+  font-size: 40px;
+}
+.navbar-icon{
+  display: none;
+}
+.nav-list{
+  display: flex;
+  gap: 8px;
+}
+.logo{
+  width: 90px;
+}
+.nav-item{
+  padding: 8px 8px;
+}
+
+@media (max-width: 1400px) {
+ 
+  
+}
+
+@media (max-width: 1300px) {
+ 
+  .title{
+    font-size: 65px;
+  }
+  .subtitle{
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 950px) {
+ 
+  .title{
+    font-size: 50px;
+  }
+  .subtitle{
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 645px) {
+  
+  .nav-list{
+    display: none;
+    flex-direction: column; 
+  }
+  .nav-item{
+    padding: 0;
+  }
+  .navbar-icon{
+    display: flex;
+    cursor: pointer;
+  }
+  .logo{
+    width: 85px;
+  }
+  .title{
+    font-size: 30px;
+  }
+  .subtitle{
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 390px) {
+  
+  .title{
+    font-size: 20px;
+  }
+  .subtitle{
+    font-size: 10px;
+  }
+
+}
+
+
+.second-section, .fourth-container{
+  text-align: center;
+  margin-top: 65px;
+  margin-bottom: 65px;
+}
+
+.second-section, .fourth-container h3{
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.second-section p{
+  font-size: 30px;
+}
+
+
+
+.third-container .info-titre{
+  font-size: 30px;
+}
+
+@media (max-width: 1300px) {
+  .second-section h3{
+    font-size: 65px;
+  }
+  .second-section p{
+    font-size: 20px;
+  }
+  .second-section{
+    height: 300px;
+  }
+  .third-container button{
+  }
+}
+
+@media (max-width: 780px) {
+  .second-section h3{
+    font-size: 50px;
+    margin-bottom: 25px;
+  }
+  .second-section p{
+    font-size: 15px;
+  }
+  .second-section{
+    margin-bottom: 0px;
+    text-align: center;
+  }
+  .third-container button{
+    margin-bottom: 20px;
+  }
+
+  .third-container{
+    text-align: center;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 390px) {
+  .second-section h3{
+    font-size: 35px;
+  }
+  .second-section p{
+    font-size: 15px;
+  }
+  
+  .third-section{
+    margin-bottom: 200px;
+  }
+}
+
+i{
+  font-size: 40px;
+}
+
+.tarifs h3{
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.temoignages h3{
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+.contact h3{
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
