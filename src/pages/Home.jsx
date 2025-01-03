@@ -2,9 +2,22 @@ import { Link } from "react-router-dom";
 import Slider from "./Slider";
 import Testimonial from "./Testimonial";
 import ContactUs from "./ContactUs";
+import { Helmet } from "react-helmet";
+
 export default function Home() {
   return (
     <div className="homepage">
+      <Helmet>
+        <meta
+          name="description"
+          content="Rejoignez B5 Fitness pour atteindre vos objectifs de remise en forme grâce à des programmes d'entraînement personnalisés et un coaching expert."
+        />
+        <meta
+          name="keywords"
+          content="fitness, gym, B5 Fitness, salle de sport, sport, salle de gym"
+        />
+        <meta name="author" content="B5 Fitness Team" />
+      </Helmet>
       <div className="first-section ">
         <div className="title-content">
           <h1 className="text-slate-100 title">B5 FITNESS</h1>
@@ -55,7 +68,7 @@ export default function Home() {
             </p>
 
             <button className="bg-black px-4 py-2 rounded mt-12 text-slate-100">
-            <a href="#contact">Réserver ma place</a>
+              <a href="#contact">Réserver ma place</a>
             </button>
           </div>
         </div>
@@ -88,7 +101,10 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="fourth-container mt-[250px] md:mt-[200px] container" id="services">
+      <div
+        className="fourth-container mt-[250px] md:mt-[200px] container"
+        id="services"
+      >
         <h3 className="ser">Nos Services</h3>
         <p>Salle de musculation</p>
         <p>
@@ -161,25 +177,31 @@ export default function Home() {
             <li>Séance personnalisée pour un suivi optimal.</li>
             <li>Prix : 50000 f/mois</li>
             <h4 className="text-center">Offre spéciale</h4>
-            <li>Inscription gratuite pour toute souscription à un abonnement annuel.</li>
+            <li>
+              Inscription gratuite pour toute souscription à un abonnement
+              annuel.
+            </li>
             <li>Prix : 60000 f/mois</li>
           </div>
           <div className="bg-black rounded flex-grow p-4 text-slate-100 text-left min-h-[315px]">
-          <h4 className="text-center">Horaires</h4>
-            <li>Inscription gratuite pour toute souscription à un abonnement annuel.</li>
+            <h4 className="text-center">Horaires</h4>
+            <li>
+              Inscription gratuite pour toute souscription à un abonnement
+              annuel.
+            </li>
             <li>Prix : 60000 f/mois</li>
           </div>
         </div>
       </div>
 
-      <div className="temoignages text-center w-[450px] container mt-8" >
+      <div className="temoignages text-center w-[450px] container mt-8">
         <h3 className="text-center">Témoignages</h3>
-        <Testimonial/>
+        <Testimonial />
       </div>
 
       <div className="contact mt-8" id="contact">
         <h3 className="text-center">Contactez-nous</h3>
-        <ContactUs/>
+        <ContactUs />
       </div>
     </div>
   );
